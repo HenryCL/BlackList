@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  color: white;
+}
+
+.logo img {
+  width: 120px;
+}
+.logo{
+  background-color: black;
+}
+
+.font2 img{
+  width: 50%;
+}
+
+.font2{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
