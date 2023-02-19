@@ -4,18 +4,18 @@ header {
   align-items: center;
   padding: 10px;
   background-color: #fff;
-  color: white;
+  color: #fff;
 }
 
 .logo img {
   width: 120px;
 }
 .logo{
-  background-color: black;
+  background-color: #000;
 }
 
 .font2 img{
-  width: 50%;
+  width: 40%;
 }
 
 .font2{

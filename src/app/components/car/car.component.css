@@ -1,6 +1,6 @@
 
 .img_slide{
-    width: 70%;
+    width: 50%;
     height: 50vh;
     display: flex;
     padding-left: 0px;
@@ -17,9 +17,10 @@
     background-position: center;
     position: relative;
     border-radius: 0px 10px;
-    padding: 5vh;
+    padding: 10vh;
 
 }
+
 
 .img1{
     background-image:url("src/assets/img1.jpg");
@@ -57,7 +58,7 @@ img:hover{
 
 .img:hover p {
     background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #000;
+    color: #000;
     transform: rotate(0deg);
 }
