@@ -28,4 +28,30 @@ header {
   padding-bottom: 50px;
 }
 
+  figure{
+    display: grid;
+    grid-template: 1fr / 1fr "stack";
+  }
+
+  figure > * {
+    grid-area: stack;
+  }
+
+  figure > img{
+    width: 10rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  figure > figcaption{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 400ms,  visibility 0ms 400ms;
+  }
+
+  figure:hover > figcaption{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 400ms;
+  }
 
