@@ -16,3 +16,17 @@ body {
     height: auto;
     display: block;
   }
+
+
+  .h2 h2{
+    padding-top: 10px;
+    text-align: center;
+    font-family: monospace;
+    color: #000;
+    font-size: 8vh;
+  }
+
+  .h2{
+    padding-top: 10px;
+    border-radius: 15px #000;
+  }
