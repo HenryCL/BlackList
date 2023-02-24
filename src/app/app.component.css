@@ -60,9 +60,26 @@ header {
   transform: translateY(144px);
   opacity: 0;
   transition: 1s all ease;
+  grid-row: 2 / 3; /* ocupa a segunda linha */
+  grid-column: 1 / -1; /* ocupa todas as colunas */
 }
 
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
 }
+
+.container{
+    background-color: #fff;
+    height: 200px;
+    grid-row: 1 / 2; /* ocupa a primeira linha */
+    grid-column: 1 / -1; /* ocupa todas as colunas */
+    display: block;
+    padding: 80px;
+    margin-bottom: 20vh;
+  }
+
+  body {
+    display: block;
+    grid-template-rows: 200px minmax(0, 1fr);
+  }

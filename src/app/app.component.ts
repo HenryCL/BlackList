@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,ElementRef, OnInit } from '@angular/core';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-root',
@@ -6,26 +9,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit{
+
+  constructor(private elementRef: ElementRef){}
   title = 'fe-blacklist';
 
-}
-function reveal(): void{
-  var reveals = document.querySelectorAll(".reveal");
+  ngOnInit(){
+    const element = this.elementRef.nativeElement.querySelectorAll('.reveal');
+    gsap.fromTo(element, {
+      opacity: 0,
+      y: 50
+    }, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
+  }
+  
 
-  reveals.forEach((reveal) => {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveal.getBoundingClientRect().top;
-    var elementVisible = 100;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveal.classList.add("active");
-    } else {
-      reveal.classList.remove("active");
-    }
-  });
-  window.addEventListener("scroll",reveal);
-}
+
+
 
  
   
