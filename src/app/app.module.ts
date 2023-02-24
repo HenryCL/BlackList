@@ -8,6 +8,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { SectionComponent } from './components/section/section.component';
 import { HeaderComponent } from './components/header/header.component';
+import { RouterComponent } from './components/router/router.component';
+import { PhotosComponent } from './components/photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HeaderComponent } from './components/header/header.component';
     CarComponent,
     NavBarComponent,
     SectionComponent,
-    HeaderComponent
+    HeaderComponent,
+    RouterComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,AppRoutingModule,FormsModule],

@@ -13,7 +13,14 @@
   }
   
   .container{
+      
+      /* background-image: url('src/assets/black.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; */
+
       background-color: #fff;
+    
       height: 350px;
       grid-row: 1 / 2; /* ocupa a primeira linha */
       grid-column: 1 / -1; /* ocupa todas as colunas */
